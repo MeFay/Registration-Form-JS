@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #724cf9;
+  color: #ffd6ff;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 50%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px #ffd6ff;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: flex;
+  align-items: center;
+
+}
+
+.input-box input[type="text"],
+.input-box input[type="gender"],
+.input-box input[type="email"],
+.input-box input[type="tel"],
+.input-box input[type="password"] {
+  flex-grow: 1;
+  font-size: 17px;
+  font-weight: 400;
+  color: #724cf9;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  border-color: #ffd6ff;
+  transition: all 0.3s ease;
+  padding: 8px;
+}
+
+.input-box input[type="radio"],
+.input-box input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+
+
+.input-box.button input {
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  background: #7de987;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-box.button input:hover {
+  background: #43f8c8;
+}
+
+.input-box.button input:active,
+.input-box.button input:focus {
+  transform: scale(0.95);
+}
+
+form .text {
+  color: #724cf9;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.input-box.login-input-box.button input {
+  background: #7de987;
+}

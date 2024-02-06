@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial- scale=1 auto" />
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="/smtg" method="post" id="loginForm">
+        <div class="input-box">
+          <label>Name: <input id="name" type="text" /></label>
+        </div>
+
+        <div class="input-box">
+          <label
+            >Cell Phone: <span>+351</span>
+            <input
+              id="phoneNumber"
+              type="tel"
+              maxlength="9"
+              pattern="^(\+351)?\s?9[2|6|1][0-9]{7}"
+          /></label>
+        </div>
+
+        <div class="input-box" id="gender">
+          <label> Sexo:</label>
+          <label
+            >Feminino
+            <input id="sexFem" name="gender" type="radio" value="Feminino"
+          /></label>
+          <label
+            >Masculino<input
+              id="sexMas"
+              name="gender"
+              type="radio"
+              value=" Masculino"
+          /></label>
+        </div>
+
+        <div class="input-box">
+          <label>Email: <input id="email" type="email" /></label>
+        </div>
+
+        <div class="input-box">
+          <label
+            >Password
+            <input
+              id="password"
+              type="password"
+              placeholder="Minimum eight characters, at least one letter and one number:"
+              pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+            />
+          </label>
+        </div>
+
+        <div class="input-box" id="hobbies">
+          <label>Hobbies:</label>
+          <div class="check-box">
+            <label> <input id="music" type="checkbox" />Music </label>
+          </div>
+
+          <div class="check-box">
+            <label> <input id="cinema" type="checkbox" />Cinema </label>
+          </div>
+
+          <div class="check-box">
+            <label> <input id="dance" type="checkbox" />Dance </label>
+          </div>
+
+          <div class="check-box">
+            <label>
+              <input id="photography" type="checkbox" disabled />
+              Photography
+            </label>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label
+            >Age:
+            <div id="ageNumber">18</div>
+            <input
+              id="age"
+              type="range"
+              min="18"
+              max="99"
+              value="18"
+              oninput="ageNumber.innerText = this.value"
+          /></label>
+        </div>
+
+        <div class="input-box button">
+          <input type="Submit" value="Enviar" />
+        </div>
+        <div class="text"></div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
